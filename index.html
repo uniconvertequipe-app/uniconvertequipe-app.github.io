@@ -1,2 +1,87 @@
-<h1>UniConvert</h1>
-<p><a href="https://uniconvertequipe-app.github.io/UniConvert-legal/privacy_policy.html">Politique de confidentialité</a></p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UniConvert – Convertisseur de documents pour Android</title>
+<meta name="description" content="UniConvert convertit images, textes, scans et PDF directement sur ton téléphone, sans serveur et sans collecte de données.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f7fb; --surface:#ffffff; --ink:#14213d; --muted:#4a5570;
+  --accent:#3b5bdb; --accent-ink:#ffffff; --line:#d9deea; --chip:#e7ecff;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0f1526; --surface:#18203a; --ink:#eef1fa; --muted:#aab3cc;
+    --accent:#8ea2ff; --accent-ink:#0f1526; --line:#2a3454; --chip:#222c4d; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:1.08rem;line-height:1.6}
+main{max-width:46rem;margin:0 auto;padding:3.5rem 1.25rem 2rem}
+h1,h2{font-family:"Bricolage Grotesque","Trebuchet MS",sans-serif;line-height:1.1;margin:0}
+h1{font-size:clamp(2.6rem,9vw,4.2rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:1.5rem;font-weight:600;margin-bottom:1rem}
+.lead{font-size:1.25rem;color:var(--muted);max-width:34rem;margin:1rem 0 2rem}
+.flow{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 2rem;padding:0;list-style:none}
+.flow li{background:var(--chip);border-radius:999px;padding:.45rem 1rem;font-weight:600;font-size:.98rem}
+.flow b{color:var(--accent);margin:0 .35rem}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);
+  padding:.85rem 1.6rem;border-radius:.6rem;font-weight:600;text-decoration:none}
+.btn:hover{filter:brightness(1.1)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+section{margin-top:3.5rem}
+dl{margin:0;display:grid;gap:1.1rem}
+dt{font-weight:600}
+dd{margin:.1rem 0 0;color:var(--muted)}
+.privacy{background:var(--surface);border:1px solid var(--line);border-radius:.8rem;padding:1.4rem 1.5rem}
+.privacy p{margin:0}
+footer{max-width:46rem;margin:0 auto;padding:2rem 1.25rem 3rem;border-top:1px solid var(--line);
+  color:var(--muted);font-size:.95rem}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+  <h1>UniConvert</h1>
+  <p class="lead">Convertis tes images, textes, scans et PDF en quelques secondes, directement sur ton téléphone Android.</p>
+
+  <ul class="flow" aria-label="Conversions disponibles">
+    <li>Image<b>→</b>PDF</li>
+    <li>Texte<b>→</b>PDF</li>
+    <li>Scan<b>→</b>PDF</li>
+    <li>Image<b>→</b>Texte</li>
+    <li>PDF<b>→</b>Images</li>
+  </ul>
+
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.uniconvert.converter">Télécharger sur Google Play</a>
+
+  <section>
+    <h2>Ce que fait l'application</h2>
+    <dl>
+      <div><dt>Image en PDF</dt><dd>Regroupe une ou plusieurs photos dans un seul document.</dd></div>
+      <div><dt>Texte en PDF</dt><dd>Transforme tes fichiers TXT et DOCX en PDF.</dd></div>
+      <div><dt>Scan en PDF</dt><dd>Numérise un document avec l'appareil photo et enregistre-le en PDF.</dd></div>
+      <div><dt>Image en texte (OCR)</dt><dd>Extrait le texte d'une photo pour le copier ou le modifier.</dd></div>
+      <div><dt>PDF en images</dt><dd>Exporte chaque page d'un PDF en image.</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Tes fichiers restent chez toi</h2>
+    <div class="privacy">
+      <p>Toutes les conversions se font sur ton téléphone. Aucun fichier n'est envoyé sur un serveur et UniConvert ne collecte pas tes données personnelles. L'application est gratuite et affiche des publicités discrètes après une conversion.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a href="https://uniconvertequipe-app.github.io/UniConvert-legal/privacy_policy.html">Politique de confidentialité</a>
+  &nbsp;&nbsp;
+  <a href="https://uniconvertequipe-app.github.io/UniConvert-legal/terms_of_use.html">Conditions d'utilisation</a>
+</footer>
+</body>
+</html>
